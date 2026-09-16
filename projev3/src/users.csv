@@ -1,0 +1,7 @@
+userId,email,password,role,phoneNumber,isCorporate,taxId
+1,admin@carrental.com,admin123,ADMIN,,false,
+2,alice@example.com,pass123,CUSTOMER,5551234567,false,
+3,bob@example.com,pass123,CUSTOMER,5552345678,false,
+4,carol@example.com,pass123,CUSTOMER,5553456789,false,
+5,contact@acme-logistics.example,corp123,CUSTOMER,5554567890,true,TR1234567890
+6,fleet@northwind.example,corp123,CUSTOMER,5555678901,true,TR9876543210

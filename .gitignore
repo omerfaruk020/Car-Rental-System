@@ -1,0 +1,30 @@
+# Build output
+out/
+bin/
+build/
+target/
+*.class
+*.jar
+
+# Temp file created by RUN.bat
+sources.txt
+
+# Superseded by RUN.bat — safe to delete from disk
+CALISTIR.bat
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+nbproject/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

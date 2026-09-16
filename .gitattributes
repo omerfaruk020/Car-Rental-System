@@ -1,0 +1,23 @@
+# Normalize line endings: LF in the repository, native in the working copy.
+* text=auto
+
+# Source and data files
+*.java  text diff=java
+*.md    text
+*.csv   text
+*.txt   text
+.gitignore text
+.gitattributes text
+
+# Windows batch files must keep CRLF so cmd.exe parses them reliably
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# Shell scripts must keep LF
+*.sh    text eol=lf
+
+# Never touch these
+*.class binary
+*.jar   binary
+*.png   binary
+*.jpg   binary
