@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 chcp 65001 >nul
 title Car Rental System
-cd /d "%~dp0projev3"
+cd /d "%~dp0car-rental"
 
 echo.
 echo  ============================================
@@ -76,7 +76,7 @@ echo  Build successful. Starting the application...
 echo.
 
 rem ---------- 4) Run ----------
-rem The working directory must be projev3: the CSV paths are relative ("src/").
+rem The working directory must be car-rental: the CSV paths are relative ("src/").
 "%JAVACMD%" -Dfile.encoding=UTF-8 -cp out com.carrental.main.Main
 
 echo.

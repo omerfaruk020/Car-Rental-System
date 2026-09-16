@@ -91,10 +91,10 @@ The project follows a layered architecture. Each layer depends only on the one b
 ## Project Structure
 
 ```
-carrental/
+Car-Rental-System/
 ├── RUN.bat                      Compile and run without an IDE (Windows)
 ├── README.md
-└── projev3/
+└── car-rental/
     └── src/
         ├── vehicles.csv          Vehicle data
         ├── users.csv             User data
@@ -156,20 +156,20 @@ Double-click `RUN.bat`. It locates the JDK, compiles the sources and starts the 
 ### Command line (any platform)
 
 ```bash
-cd projev3
+cd car-rental
 
 # Compile
 mkdir -p out
 javac -encoding UTF-8 -d out $(find src -name "*.java")
 
-# Run  (the working directory must be projev3: CSV paths are relative)
+# Run  (the working directory must be car-rental: CSV paths are relative)
 java -Dfile.encoding=UTF-8 -cp out com.carrental.main.Main
 ```
 
 On Windows CMD:
 
 ```bat
-cd projev3
+cd car-rental
 if not exist out mkdir out
 dir /s /b src\*.java > sources.txt
 javac -encoding UTF-8 -d out @sources.txt
@@ -292,7 +292,7 @@ Penalties are charged at return time and added to the reservation total. A vehic
 
 ## Data Files
 
-Data lives in `projev3/src/` as CSV and is flushed to disk on every change. Values containing a comma, a quote or a line break are quoted and escaped per RFC 4180.
+Data lives in `car-rental/src/` as CSV and is flushed to disk on every change. Values containing a comma, a quote or a line break are quoted and escaped per RFC 4180.
 
 **vehicles.csv**
 ```csv
@@ -342,7 +342,7 @@ This is a learning project, not production software.
 - **No refund on early return.** A customer who ends a 10-day rental on day 2 still pays the full amount.
 - **Payment and notification services are mocks.** `PaymentGateway` always approves; `NotificationService` only prints to the console.
 - **CSV instead of a database.** Not suitable for concurrent multi-user access.
-- **Relative file paths.** The application must be started from the `projev3` directory, otherwise the CSV files are not found.
+- **Relative file paths.** The application must be started from the `car-rental` directory, otherwise the CSV files are not found.
 
 ---
 
